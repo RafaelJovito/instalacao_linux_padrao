@@ -36,7 +36,15 @@ sudo apt-get install mysql-server
 * Instalar o **PHP** e suas dependências
 
 ```shell
-sudo apt-get install php7.1 php7.1-mysql php7.1-json php7.1-curl php7.1-gd php7.1-intl php7.1-pspell php7.1-xml php7.1-xmlrpc php7.1-zip php7.1-cli php7.1-ldap aspell graphviz
+sudo add-apt-repository -y ppa:ondrej/php && sudo apt-get update
+```
+
+```shell
+sudo apt-get install php7.2 php7.2-mysql php7.2-json php7.2-curl php7.2-gd php7.2-intl php7.2-pspell php7.2-xml php7.2-xmlrpc php7.2-zip php7.2-cli php7.2-ldap aspell graphviz
+```
+
+```shell
+php -v
 ```
 
 * Instalar e configurar o **PHPMyAdmin**

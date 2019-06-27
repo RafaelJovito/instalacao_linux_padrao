@@ -20,11 +20,24 @@ git config --global user.email sueldosales@gmail.com
 * Instalar e configurar o **Apache**
 
 ```shell
-sudo apt-get install apache2 libapache2-mod-php7.1
+sudo apt-get install apache2 libapache2-mod-php7.2
 
 sudo vim /etc/apache2/sites-available/000-default.conf
 
+```
+
+```shell
+sudo vim /etc/apache2/apache2.conf
+
+```
+Adicione a seguinte linha ao final do documento apache2.conf:
+
+```shell
+Include /etc/phpmyadmin/apache.conf
+```
+```shell
 sudo service apache2 reload
+
 ```
 
 * Instalar e configurar o **MySQL**

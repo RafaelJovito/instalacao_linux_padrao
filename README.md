@@ -45,19 +45,22 @@ sudo service apache2 reload
 ```shell
 sudo apt-get install mysql-server
 ```
-* Resolvendo problemas com o root do **MySQL**
+* Resolvendo problemas com o root do **MySQL 8.0**
 
 ```shell
-sudo mysql --user=root mysql
-SET GLOBAL validate_password_length = 6;
-update mysql.user set authentication_string=PASSWORD("c0t1c$"), plugin="mysql_native_password" where User='root' and Host='localhost';
+sudo mysql -uroot -p
+UPDATE mysql.user SET authentication_string=null WHERE User='root';
+FLUSH PRIVILEGES;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'yourpasswd';
+
 exit;
 sudo /etc/init.d/mysql restart
 sudo /etc/init.d/apache2 restart
 
 ```
 
-* Instalar o **PHP** e suas dependências
+* Instalar o **PHP 7.4** e suas dependências
 
 ```shell
 sudo add-apt-repository -y ppa:ondrej/php && sudo apt-get update

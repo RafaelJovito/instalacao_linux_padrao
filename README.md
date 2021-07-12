@@ -12,15 +12,15 @@ sudo apt-get -y install sudo vim vim-scripts unzip zip p7zip-full htop iotop wge
 ```shell
 sudo apt-get install git
 
-git config --global user.name "Sueldo Sales"
+git config --global user.name "username"
 
-git config --global user.email sueldosales@gmail.com
+git config --global user.email username@email
 ```
 
 * Instalar e configurar o **Apache**
 
 ```shell
-sudo apt-get install apache2 libapache2-mod-php7.2
+sudo apt-get install apache2 libapache2-mod-php7.4
 
 sudo vim /etc/apache2/sites-available/000-default.conf
 
@@ -64,7 +64,7 @@ sudo add-apt-repository -y ppa:ondrej/php && sudo apt-get update
 ```
 
 ```shell
-sudo apt-get install php7.2 php7.2-mysql php7.2-json php7.2-curl php7.2-gd php7.2-intl php7.2-pspell php7.2-xml php7.2-xmlrpc php7.2-zip php7.2-cli php7.2-ldap aspell graphviz php7.2-mbstring
+sudo apt-get install php7.4 php7.4-mysql php7.4-json php7.4-curl php7.4-gd php7.4-intl php7.4-pspell php7.4-xml php7.4-xmlrpc php7.4-zip php7.4-cli php7.4-ldap aspell graphviz php7.4-mbstring
 ```
 
 ```shell

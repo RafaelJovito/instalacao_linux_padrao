@@ -67,7 +67,7 @@ sudo add-apt-repository -y ppa:ondrej/php && sudo apt-get update
 ```
 
 ```shell
-sudo apt-get install php7.4 php7.4-mysql php7.4-json php7.4-curl php7.4-gd php7.4-intl php7.4-pspell php7.4-xml php7.4-xmlrpc php7.4-zip php7.4-cli php7.4-ldap aspell graphviz php7.4-mbstring
+sudo apt-get install php7.4 php7.4-mysql php7.4-json php7.4-curl php7.4-gd php7.4-intl php7.4-pspell php7.4-xml php7.4-xmlrpc php7.4-zip php7.4-cli php7.4-ldap aspell graphviz php7.4-mbstring php7.4-soap
 ```
 
 ```shell

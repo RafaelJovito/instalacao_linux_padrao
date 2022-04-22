@@ -73,6 +73,11 @@ sudo apt-get install php7.4 php7.4-mysql php7.4-json php7.4-curl php7.4-gd php7.
 ```shell
 php -v
 ```
+* Instalar o **PHP 8.0** e suas dependências
+ 
+```shell
+sudo apt install -y php8.0-{common,xml,zip,mysql,json,cli,curl,mbstring,gd,intl,xsl,pspell,xmlrpc,bcmath,imap,soap,readline,sqlite3,gmp,libapache2-mod-php,libapache2-mod-php,php-pgsql,php-pdo_pgsql,ldap aspell graphviz,mbstring}
+```
 
 * Instalar e configurar o **PHPMyAdmin**
 

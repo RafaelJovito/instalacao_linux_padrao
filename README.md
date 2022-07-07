@@ -24,10 +24,9 @@ php -v
 
 >Link instalar: https://www.digitalocean.com/community/tutorials/how-to-install-php-8-1-and-set-up-a-local-development-environment-on-ubuntu-22-04
 
-* Instalar o **Atom**
  
 ```shell
-sudo apt install -y php8.0-{common,xml,zip,mysql,json,cli,curl,mbstring,gd,intl,xsl,pspell,xmlrpc,bcmath,imap,soap,readline,sqlite3,gmp,libapache2-mod-php,libapache2-mod-php,php-pgsql,php-pdo_pgsql,ldap aspell graphviz,mbstring}
+sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
 ```
 
 * Instalar e configurar o **Apache**

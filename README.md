@@ -33,7 +33,7 @@ sudo apt install -y php8.0-{common,xml,zip,mysql,json,cli,curl,mbstring,gd,intl,
 * Instalar e configurar o **Apache**
 
 ```shell
-sudo apt-get install apache2 libapache2-mod-php8.0
+sudo apt-get install apache2 libapache2-mod-php8.1
 
 sudo vim /etc/apache2/sites-available/000-default.conf
 

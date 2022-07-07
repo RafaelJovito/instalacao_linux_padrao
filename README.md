@@ -20,7 +20,11 @@ git config --global user.email username@email
 ```shell
 php -v
 ```
-* Instalar o **PHP 8.0** e suas dependências
+* Instalar o **PHP 8.1** e suas dependências
+
+>Link instalar: https://www.digitalocean.com/community/tutorials/how-to-install-php-8-1-and-set-up-a-local-development-environment-on-ubuntu-22-04
+
+* Instalar o **Atom**
  
 ```shell
 sudo apt install -y php8.0-{common,xml,zip,mysql,json,cli,curl,mbstring,gd,intl,xsl,pspell,xmlrpc,bcmath,imap,soap,readline,sqlite3,gmp,libapache2-mod-php,libapache2-mod-php,php-pgsql,php-pdo_pgsql,ldap aspell graphviz,mbstring}

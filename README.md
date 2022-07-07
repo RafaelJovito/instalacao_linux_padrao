@@ -17,10 +17,19 @@ git config --global user.name "username"
 git config --global user.email username@email
 ```
 
+```shell
+php -v
+```
+* Instalar o **PHP 8.0** e suas dependências
+ 
+```shell
+sudo apt install -y php8.0-{common,xml,zip,mysql,json,cli,curl,mbstring,gd,intl,xsl,pspell,xmlrpc,bcmath,imap,soap,readline,sqlite3,gmp,libapache2-mod-php,libapache2-mod-php,php-pgsql,php-pdo_pgsql,ldap aspell graphviz,mbstring}
+```
+
 * Instalar e configurar o **Apache**
 
 ```shell
-sudo apt-get install apache2 libapache2-mod-php7.4
+sudo apt-get install apache2 libapache2-mod-php8.0
 
 sudo vim /etc/apache2/sites-available/000-default.conf
 
@@ -70,14 +79,7 @@ sudo add-apt-repository -y ppa:ondrej/php && sudo apt-get update
 sudo apt-get install php7.4 php7.4-mysql php7.4-json php7.4-curl php7.4-gd php7.4-intl php7.4-pspell php7.4-xml php7.4-xmlrpc php7.4-zip php7.4-cli php7.4-ldap aspell graphviz php7.4-mbstring php7.4-soap
 ```
 
-```shell
-php -v
-```
-* Instalar o **PHP 8.0** e suas dependências
- 
-```shell
-sudo apt install -y php8.0-{common,xml,zip,mysql,json,cli,curl,mbstring,gd,intl,xsl,pspell,xmlrpc,bcmath,imap,soap,readline,sqlite3,gmp,libapache2-mod-php,libapache2-mod-php,php-pgsql,php-pdo_pgsql,ldap aspell graphviz,mbstring}
-```
+
 
 * Instalar e configurar o **PHPMyAdmin**
 

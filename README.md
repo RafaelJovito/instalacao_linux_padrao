@@ -17,9 +17,6 @@ git config --global user.name "username"
 git config --global user.email username@email
 ```
 
-```shell
-php -v
-```
 * Instalar o **PHP 8.1** e suas dependências
 
 >Link instalar: https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-php-8-0-on-ubuntu-20-04-ubuntu-18-04.html
@@ -28,7 +25,9 @@ php -v
 sudo apt install -y curl wget gnupg2 ca-certificates lsb-release apt-transport-https
 sudo apt-add-repository ppa:ondrej/php
 sudo apt update
-sudo apt-get install -y php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
+sudo apt-get install -y php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath php8.1-pspell php8.1-xmlrpc php8.1-ldap aspell graphviz php8.1-soap
+
+php -v
 
 ```
 
@@ -38,19 +37,6 @@ sudo apt-get install -y php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip 
 sudo apt-get install apache2 libapache2-mod-php8.1
 
 sudo vim /etc/apache2/sites-available/000-default.conf
-
-```
-
-```shell
-sudo vim /etc/apache2/apache2.conf
-
-```
-Adicione a seguinte linha ao final do documento apache2.conf:
-
-```shell
-Include /etc/phpmyadmin/apache.conf
-```
-```shell
 sudo service apache2 reload
 
 ```
@@ -75,18 +61,6 @@ sudo /etc/init.d/apache2 restart
 
 ```
 
-* Instalar o **PHP 7.4** e suas dependências
-
-```shell
-sudo add-apt-repository -y ppa:ondrej/php && sudo apt-get update
-```
-
-```shell
-sudo apt-get install php7.4 php7.4-mysql php7.4-json php7.4-curl php7.4-gd php7.4-intl php7.4-pspell php7.4-xml php7.4-xmlrpc php7.4-zip php7.4-cli php7.4-ldap aspell graphviz php7.4-mbstring php7.4-soap
-```
-
-
-
 * Instalar e configurar o **PHPMyAdmin**
 
 ```shell
@@ -97,6 +71,19 @@ sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.co
 sudo a2enconf phpmyadmin
 
 sudo service apache2 reload
+```
+```shell
+sudo vim /etc/apache2/apache2.conf
+
+```
+Adicione a seguinte linha ao final do documento apache2.conf:
+
+```shell
+Include /etc/phpmyadmin/apache.conf
+```
+```shell
+sudo service apache2 reload
+
 ```
 
 * Instalar o **Terminator**

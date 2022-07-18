@@ -22,13 +22,14 @@ php -v
 ```
 * Instalar o **PHP 8.1** e suas dependências
 
->Link instalar: https://www.digitalocean.com/community/tutorials/how-to-install-php-8-1-and-set-up-a-local-development-environment-on-ubuntu-22-04
+>Link instalar: https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-php-8-0-on-ubuntu-20-04-ubuntu-18-04.html
 
 ```shell
-sudo apt-get install php8.1 libapache2-mod-php8.1
-```
-```shell
-sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
+sudo apt install -y curl wget gnupg2 ca-certificates lsb-release apt-transport-https
+sudo apt-add-repository ppa:ondrej/php
+sudo apt update
+sudo apt-get install -y php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
+
 ```
 
 * Instalar e configurar o **Apache**
